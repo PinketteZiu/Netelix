@@ -1,0 +1,7 @@
+<% if current_user.watchlist.include?(@movie) %>
+  <p>Ajouter à ma liste</p>
+  <br><i class="fa-regular fa-heart" style="color: #d732a8;"></i>
+<% else %>
+  <p>Retirer de ma liste</p>
+  <br><i class="fa-solid fa-heart" style="color: #d732a8;"></i>
+<% end %>

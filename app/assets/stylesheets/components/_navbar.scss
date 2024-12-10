@@ -1,0 +1,40 @@
+.navbar-lewagon {
+  justify-content: space-between;
+  background: #8C5163;
+  padding: 1;
+  margin: 1;
+  position: relative;
+}
+
+.navbar-lewagon .navbar-collapse {
+  flex-grow: 0;
+}
+
+.navbar-lewagon .navbar-brand {
+  position: relative;
+}
+
+.navbar-lewagon .navbar-brand img {
+  width: 80px;
+  position: absolute;
+  top: -10px;
+  left: 0;
+  border-radius: 50%;
+}
+
+.container-fluid h1{
+  font-size: 44;
+  font-weight: bold;
+  color: #8C5163;
+}
+
+.navbar-lewagon .navbar-nav .nav-link#ma-liste {
+  background-color: #FD5F74;
+  border-radius: 10px;
+  margin-right: 15px;
+}
+
+.navbar-lewagon .navbar-nav .nav-link#se-deconnecter {
+  background-color: #fd5f74a0;
+  border-radius: 10px;
+}

@@ -1,0 +1,24 @@
+<div class="text-center mt-3">
+    <h1>Vos films à voir</h1>
+</div>
+
+<div class="container d-flex">
+  <div class="content flex-grow-1">
+    <div class="cards d-flex flex-wrap">
+      <% @movies.each do |movie| %>
+        <% if current_user.watchlist.include?(movie) %>
+          <div class="card-trip card m-2" style="width: 18rem;">
+            <div class="card-body">
+              <div class="w-100 p-3">
+                <%= image_tag('film.jpg', style:'width:100%') %>
+              </div>
+              <%= link_to movie_path(movie), class: "card-title" do %>
+                <h3><%= movie.title %></h3>
+              <% end %>
+            </div>
+          </div>
+        <% end %>
+      <% end %>
+    </div>
+  </div>
+</div>

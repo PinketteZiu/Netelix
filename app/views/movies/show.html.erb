@@ -1,0 +1,24 @@
+<div class="container">
+  <h1 class="my-5"><%= @movie.title %></h1>
+
+  <div class="row p-auto">
+    <div class="col-md-4">
+      <%= image_tag('film.jpg', style:'width:100%') %>
+    </div>
+
+    <div class="col-md-4 mt-5 pt-3">
+      <p><strong>Réalisateur :</strong> <br> <%= @movie.director %></p>
+      <p><strong>Acteurs principaux :</strong> <br> <%= @movie.actors %></p>
+    </div>
+
+    <div class="col-md-4 mt-5 pt-3 d-flex justify-content-end">
+      <%= render "shared/heart-icon" %>
+    </div>
+
+    <div class="row mt-3">
+      <div class="col-md-12">
+        <p><strong>Synopsis:</strong> <br> <%= @movie.synopsis %></p>
+      </div>
+    </div>
+  </div>
+</div>
